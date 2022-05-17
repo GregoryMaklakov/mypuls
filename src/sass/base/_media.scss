@@ -1,3 +1,11 @@
+@media (max-width: 1024px) {
+    .carousel {
+        .container {
+            width: 80%;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .promo {
         .header {
@@ -19,6 +27,20 @@
         padding: 20px;
         &__title {
             font-size: 30px;
+        }
+    }
+    .carousel {
+        .container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
         }
     }
 }
@@ -78,6 +100,25 @@
         &__title {
             font-size: 22px;
         }
+    }
+    .catalog {
+        &__tabs {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 10px;
+        }
+    }
+    .carousel {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -156,6 +197,12 @@
         form {
             width: 280px;
         }
+    }
+    .carousel {
+        width: 60%;
+    }
+    .prev, .next {
+        width: 30px;
     }
 }
 
